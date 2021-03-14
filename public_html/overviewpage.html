@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/overviewstylesheet.css">
+    <title>COVID-19 Contact Tracing</title>
+</head>
+<body>
+    <h1 class="topbar">COVID - 19 Contact Tracing</h1>
+    
+    <nav>
+        <form action="/home" method="GET">
+            <button type="submit" class="nav">Home</button>
+        </form>
+        <form action="/overview" method="GET" style="background-color: rgb(132, 151, 176);">
+            <button type="submit" class="nav">Overview</button>
+        </form>
+        <form action="/addVisit" method="GET">
+            <button type="submit" class="nav">Add Visit</button>
+        </form>
+        <form action="/report" method="GET">
+            <button type="submit" class="nav">Report</button>
+        </form>
+        <form action="/settings" method="GET">
+            <button type="submit" class="nav">Settings</button>
+        </form>
+        <form action="/logout" method="GET">
+            <button type="submit" class="nav final">Logout</button>
+        </form>
+    </nav>
+    <article>
+        <img src="img/watermark.png" alt="watermark" class="watermark">
+        <table class="overview">
+            <tr>
+                <th class="date">Date</th>
+                <th class="time">Time</th>
+                <th class="data">Duration</th>
+                <th class="data">X</th>
+                <th class="data">Y</th>
+                <th class="data"></th>
+            </tr>
+            <tr>
+                <td class="date">10/10/2022</td>
+            </tr>
+        </table>
+    </article>
+</body>
+</html>

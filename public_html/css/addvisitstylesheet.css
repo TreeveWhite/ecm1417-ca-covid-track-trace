@@ -1,0 +1,145 @@
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    height: 85%;
+    background: rgb(173, 185, 202);    
+}
+
+article {
+    float: left;
+    width: 80%;
+    height: 85%;
+    background-color: transparent;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+p {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+h1.topbar {
+    text-align: center;
+    background-color: rgb(173, 185, 202);
+    height: 10%;
+    padding: 1.2%;
+    margin: 0;
+    font-size: 40pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h2.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 24pt;
+}
+
+.watermark {
+    position: fixed;
+    z-index: -1;
+    width: 50%;
+    bottom: 0;
+    right: 12.5%;
+    opacity:0.2;
+}
+
+.map {
+    width: 35em;
+    height: 25em;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+button.nav {
+    border: none;
+    background-color: transparent;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24pt;
+}
+
+button.nav:hover {
+    background-color:  rgb(132, 151, 176);
+}
+
+button.nav.final {
+    bottom: 0;
+}
+
+.container {
+    display: table;
+    width: 66%;
+    height: 85%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.left-half {
+    float: left;
+    width: 33%;
+    text-align: left;
+    display: table-cell;
+}
+
+p.bottom {
+    vertical-align: bottom;
+    float: right;
+    display: table-cell;
+}
+
+.right-half {
+    float: left;
+    width: 67%;
+}
+
+input.entry {
+    width: 70%;
+    margin: 4px 2px;
+    font-size: 26px;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+button.add {
+    width: 70%;
+    font-size: 26px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}

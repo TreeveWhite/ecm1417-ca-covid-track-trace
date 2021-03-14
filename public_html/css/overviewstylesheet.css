@@ -1,0 +1,122 @@
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    height: 85%;
+    background: rgb(173, 185, 202);    
+}
+
+article {
+    float: left;
+    width: 80%;
+    height: 85%;
+    background-color: transparent;
+}
+
+h1.topbar {
+    text-align: center;
+    background-color: rgb(173, 185, 202);
+    height: 10%;
+    padding: 1.2%;
+    margin: 0;
+    font-size: 40pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+img.watermark {
+    position: fixed;
+    z-index: -1;
+    width: 50%;
+    bottom: 0;
+    right: 12.5%;
+    opacity:0.2;
+}
+
+button.nav {
+    border: none;
+    background-color: transparent;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24pt;
+}
+
+button.nav:hover {
+    background-color:  rgb(132, 151, 176);
+}
+
+button.nav.final {
+    bottom: 0;
+}
+
+table.overview {
+    width: fit-content;
+    padding-top: 6em;
+    padding-left: 2em;
+}
+
+td.date {
+    padding: 0px 30px 10px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+th.date {
+    padding: 0px 30px 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: right;
+}
+
+td.time {
+    padding: 0px 30px 10px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+th.time {
+    padding: 0px 30px 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+td.data {
+    padding: 0px 50px 10px 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+th.data {
+    padding: 0px 50px 10px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+

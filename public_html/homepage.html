@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homestylesheet.css">
+    <title>COVID-19 Contact Tracing</title>
+</head>
+<body>
+    <h1 class="topbar">COVID - 19 Contact Tracing</h1>
+    
+    <nav>
+        <form action="/home" method="GET">
+            <button type="submit" class="nav" style="background-color: rgb(132, 151, 176);">Home</button>
+        </form>
+        <form action="/overview" method="GET">
+            <button type="submit" class="nav">Overview</button>
+        </form>
+        <form action="/addVisit" method="GET">
+            <button type="submit" class="nav">Add Visit</button>
+        </form>
+        <form action="/report" method="GET">
+            <button type="submit" class="nav">Report</button>
+        </form>
+        <form action="/settings" method="GET">
+            <button type="submit" class="nav">Settings</button>
+        </form>
+        <form action="/logout" method="GET">
+            <button type="submit" class="nav final">Logout</button>
+        </form>
+    </nav>
+    <section class="container">
+        <img src="img/watermark.png" alt="watermark" class="watermark">
+        <h2 class="subtitle">Status</h2>
+        <hr>
+        <div class="left-half">
+            <p>Hi < name >, you might have had a connection to an infected person at the location shown in red.</p>
+            <p class="bottom">Click on the marker to see details about the infection.</p>
+        </div>
+        <div class="right-half">
+            <img src="img/exeter.jpg" alt="exeter" class="map">
+        </div>
+    </section>
+        
+</body>
+</html>
