@@ -21,8 +21,9 @@ html, body {
 nav {
     float: left;
     width: 20%;
-    height: 85%;
-    background: rgb(173, 185, 202);    
+    height: 85.8%;
+    background: rgb(173, 185, 202);
+    position: relative;
 }
 
 article {
@@ -36,7 +37,7 @@ h1.topbar {
     text-align: center;
     background-color: rgb(173, 185, 202);
     height: 10%;
-    padding: 1.2%;
+    padding: 1%;
     margin: 0;
     font-size: 40pt;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,6 +51,15 @@ img.watermark {
     bottom: 0;
     right: 12.5%;
     opacity:0.2;
+}
+
+img.cross {
+    width: 1em;
+    height: 1em;
+}
+
+img.cross:hover {
+    cursor: pointer;
 }
 
 button.nav {
@@ -70,6 +80,8 @@ button.nav:hover {
 }
 
 button.nav.final {
+    position: absolute;
+    right: 0;
     bottom: 0;
 }
 

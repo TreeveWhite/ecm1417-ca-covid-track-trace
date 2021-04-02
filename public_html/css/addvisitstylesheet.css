@@ -21,31 +21,44 @@ html, body {
 nav {
     float: left;
     width: 20%;
-    height: 85%;
-    background: rgb(173, 185, 202);    
+    height: 85.8%;
+    background: rgb(173, 185, 202);
+    position: relative;
 }
 
-article {
+.container {
+    display: table;
+    width: 66%;
+    height: 80%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.left-half {
     float: left;
-    width: 80%;
-    height: 85%;
-    background-color: transparent;
+    width: 33%;
+    height: 80%;
+    text-align: left;
+    display: table-cell;
+    position: relative;
+}
+
+.right-half {
+    position: relative;
+    float: left;
+    width: 67%;
+    overflow: auto;
 }
 
 hr {
     border: 2px solid black;
 }
 
-p {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20pt;
-}
-
 h1.topbar {
     text-align: center;
     background-color: rgb(173, 185, 202);
     height: 10%;
-    padding: 1.2%;
+    padding: 1%;
     margin: 0;
     font-size: 40pt;
     font-family: Arial, Helvetica, sans-serif;
@@ -68,10 +81,20 @@ h2.subtitle {
 }
 
 .map {
-    width: 35em;
-    height: 25em;
+    width: 34em;
+    height: 24em;
     border: 3px solid black;
     object-fit: cover;
+    cursor: crosshair;
+    overflow: auto;
+}
+
+.marker {
+    position: absolute;
+    width: 4%;
+    height: 5%;
+    top: -2000px;
+    left: -20000px;
 }
 
 button.nav {
@@ -92,33 +115,9 @@ button.nav:hover {
 }
 
 button.nav.final {
+    position: absolute;
     bottom: 0;
-}
-
-.container {
-    display: table;
-    width: 66%;
-    height: 85%;
-    padding-left: 7%;
-    padding-right: 7%;
-}
-
-.left-half {
-    float: left;
-    width: 33%;
-    text-align: left;
-    display: table-cell;
-}
-
-p.bottom {
-    vertical-align: bottom;
-    float: right;
-    display: table-cell;
-}
-
-.right-half {
-    float: left;
-    width: 67%;
+    right: 0;
 }
 
 input.entry {
@@ -142,4 +141,19 @@ button.add {
     margin: 1%;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+}
+
+.addVisit {
+    height: 75%;
+}
+
+button.add.bottom1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+button.add.bottom2 {
+    position: absolute;
+    bottom: 13%;
+    left: 0;
 }

@@ -16,20 +16,38 @@ html, body {
     height: 100%;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 nav {
     float: left;
     width: 20%;
-    height: 85%;
-    background: rgb(173, 185, 202);    
+    height: 85.8%;
+    background: rgb(173, 185, 202);
+    position: relative;
 }
 
-article {
-    float: left;
-    width: 80%;
+.container {
+    display: table;
+    width: 66%;
     height: 85%;
-    background-color: transparent;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.left-half {
+    float: left;
+    width: 33%;
+    text-align: left;
+    display: table-cell;
+    position: relative;
+    height: 80%;
+}
+
+.right-half {
+    position: relative;
+    float: left;
+    width: 67%;
 }
 
 hr {
@@ -41,11 +59,17 @@ p {
     font-size: 20pt;
 }
 
+p.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 h1.topbar {
     text-align: center;
     background-color: rgb(173, 185, 202);
     height: 10%;
-    padding: 1.2%;
+    padding: 1%;
     margin: 0;
     font-size: 40pt;
     font-family: Arial, Helvetica, sans-serif;
@@ -74,6 +98,13 @@ h2.subtitle {
     object-fit: cover;
 }
 
+.marker {
+    position: absolute;
+    width: 4%;
+    height: 5%;
+    cursor: pointer;
+}
+
 button.nav {
     border: none;
     background-color: transparent;
@@ -92,31 +123,7 @@ button.nav:hover {
 }
 
 button.nav.final {
+    position: absolute;
     bottom: 0;
-}
-
-.container {
-    display: table;
-    width: 66%;
-    height: 85%;
-    padding-left: 7%;
-    padding-right: 7%;
-}
-
-.left-half {
-    float: left;
-    width: 33%;
-    text-align: left;
-    display: table-cell;
-}
-
-p.bottom {
-    vertical-align: bottom;
-    float: right;
-    display: table-cell;
-}
-
-.right-half {
-    float: left;
-    width: 67%;
+    right: 0;
 }
